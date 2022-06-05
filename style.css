@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+    padding: 20px;
+}
+
+.container{
+    width: 1140px;
+    margin: 100px auto;
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+
+}
+
+.text,.img {
+    width: 50%;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 100px 60px 60px;
+    color: white;
+}
+
+.header-text {
+    margin-bottom: 30px;
+}
+
+.small-text {
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 100px;
+    font-weight: 100;
+    font-family: 'Inter', sans-serif;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+}
+
+.big {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 5px;
+}
+
+.small {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: white;
+font-size: 16px; }
+
+@media only screen and (max-width:600px) {
+    body, .container,.text,.img {
+        width: 100%;
+    }
+
+    main{
+        padding: 0 20px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .img img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .text{
+        text-align: center;
+    }
+
+    .header-text{
+        font-size: 19px;
+        font-weight: 700;
+    }
+
+    .small-text {
+        margin-bottom: 40px;
+    }
+
+    .text{
+        padding: 30px;
+    }
+}
